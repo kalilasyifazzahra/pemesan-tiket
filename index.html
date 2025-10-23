@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>PESAN TIKET</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container">
+        <h2 class="head-text">PESAN TIKET</h2>
+
+        <div class="form-card">
+            <div class="form-grid">
+                <form class="booking-form" action="#" method="post" novalidate>
+                    <div class="input-group">
+                        <label for="username">Nama</label>
+                        <input type="text" id="username" name="username" required />
+                    </div>
+
+                    <div class="input-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required />
+                    </div>
+
+                    <div class="input-group">
+                        <label for="tickets">Pilihan Film</label>
+                        <select name="tickets" id="tickets" required>
+                            <option value="lalaland">La La Land</option>
+                            <option value="flipped">Flipped</option>
+                            <option value="sore">Sore: Istri Dari Masa Depan</option>
+                            <option value="tenthings">10 Things I Hate About You</option>
+                        </select>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="quantity">Jumlah Tiket</label>
+                        <input type="number" id="quantity" name="quantity" min="1" max="10" value="1" required />
+                    </div>
+
+                    <div class="form-actions mt-12">
+                        <button type="submit" class="btn btn-primary">Pesan</button>
+                        <button type="reset" class="btn btn-ghost">Reset</button>
+                    </div>
+                </form>
+
+                <aside class="summary">
+                    <div class="header-row">
+                        <h3 style="margin:0">Ringkasan Pesanan</h3>
+                        <span class="small">Cek sebelum pesan</span>
+                    </div>
+                    <table>
+                        <tr><th>Nama</th><td id="s-name">-</td></tr>
+                        <tr><th>Email</th><td id="s-email">-</td></tr>
+                        <tr><th>Film</th><td id="s-film">La La Land</td></tr>
+                        <tr><th>Jumlah</th><td id="s-qty">1</td></tr>
+                    </table>
+
+                </aside>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+<script src="main.js"></script>
+</html>
